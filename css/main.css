@@ -199,7 +199,7 @@ header .sign-up {
 .feature {
     background: #f5f5f5;
 }
-.feature .title_group {
+.feature .title-group {
     width: 820px;
     margin: 0 auto;
     padding-top: 66px;
@@ -263,4 +263,88 @@ header .sign-up {
 .feature .tiles_wrap li p {
     font-size: 14px;
     color: #767676;
+}
+
+
+
+/* WHERE IS GITHUB */
+
+.where-is {
+    overflow: hidden;
+}
+.where-is .inner {
+    max-width: 980px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+.where-is .title {
+    font-size: 38px;
+    font-weight: 300;
+    margin-bottom: 18px;
+}
+.where-is .lead {
+    font-size: 26px;
+    font-weight: 300;
+    color: #767676;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+.where-is .map {
+    width: 100% !important;
+    height: 400px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-bottom: none;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+
+
+/* PRICING CARD */
+
+.pricing-card {
+    background-image: linear-gradient(180deg, #f5f5f5, #fff);
+}
+.pricing-card .inner {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 80px 0 24px 0;
+}
+.pricing-card .table {
+    width: 100%;
+    display: table;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+.pricing-card .table .table-cell1 {
+    display: table-cell;
+    padding: 24px;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 0;
+    word-wrap: break-word;
+}
+.pricing-card .table .table-cell1 a {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.pricing-card .table .table-cell2 {
+    display: table-cell;
+    padding: 24px;
+    font-size: 22px;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+td {
+    padding: 24px;
+}
+td:nth-child(2) {
+    font-size: 22px;
 }
