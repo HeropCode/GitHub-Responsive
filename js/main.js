@@ -25,6 +25,7 @@ $(function () {
 
     var $toggle = $('.toggle');
     var $toggleBtn = $('#toggle-btn');
+    var $signInput = $('.sign-form input');
 
     $toggleBtn.on('click', function () {
             $toggle.toggleClass('on');
@@ -32,6 +33,10 @@ $(function () {
 
     $(window).on('resize', function () {
         if ($(this).width() > 1020) $toggle.removeClass('on');
+    });
+
+    $signInput.on('keydown', function (event) {
+        if (event.which === 13) $(event.target).parent().next().find('input').focus();
     });
 
 });
