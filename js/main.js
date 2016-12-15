@@ -36,7 +36,10 @@ $(function () {
     });
 
     $signInput.on('keydown', function (event) {
-        if (event.which === 13) $(event.target).parent().next().find('input').focus();
+        if (event.which === 13) {
+            event.preventDefault();
+            $(event.target).parent().next().find('input, button').focus();
+        }
     });
 
 });

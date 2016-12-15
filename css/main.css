@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 /* COMMON */
 
 .container {
@@ -59,6 +60,7 @@
 .input::-moz-placeholder { color: #cacaca; }
 
 
+/* Medium devices (Desktops) */
 
 /* HEADER */
 
@@ -114,7 +116,7 @@ header .search-form {
     float: right;
     margin-right: 12px;
 }
-header .search-form #search {
+header #search {
     width: 160px;
     height: 34px;
     padding: 0 8px;
@@ -208,6 +210,7 @@ header .toggle.on {
     margin-bottom: 0;
 }
 .sec1 .sign-form .sign-up {
+    width: 100%;
     padding: 15px 25px;
     border-radius: 6px;
     font-size: 20px;
@@ -219,7 +222,6 @@ header .toggle.on {
     line-height: 18px;
     text-align: center;
 }
-
 
 
 /* FEATURE */
@@ -294,7 +296,6 @@ header .toggle.on {
 }
 
 
-
 /* WHERE IS GITHUB */
 
 .sec3 {
@@ -325,7 +326,6 @@ header .toggle.on {
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
     box-sizing: border-box;
 }
-
 
 
 /* PRICING CARD */
@@ -367,7 +367,6 @@ header .toggle.on {
 }
 
 
-
 /* FOOTER */
 
 footer {
@@ -406,10 +405,9 @@ footer .logo:hover svg {
 }
 
 
-
 /* MEDIA */
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1348px) {
 
     .sec2 .tiles-wrap li {
         max-width: 25%;
@@ -423,8 +421,8 @@ footer .logo:hover svg {
 
 }
 
-
-@media screen and (max-width: 1050px) {
+/* Medium devices (Desktops) */
+@media screen and (max-width: 1200px) {
 
     header .inner {
         max-width: 1200px;
@@ -468,7 +466,7 @@ footer .logo:hover svg {
         margin-top: 12px;
         margin-right: 0;
     }
-    header .search-form #search {
+    header #search {
         width: 100%;
         height: 42px;
         text-align: center;
@@ -484,7 +482,6 @@ footer .logo:hover svg {
     header .toggle {
         display: none;
     }
-
 
 
     .sec1 .inner {
@@ -507,7 +504,6 @@ footer .logo:hover svg {
     }
 
 
-
     .sec2 .title-group {
         padding: 66px 20px 0 20px;
     }
@@ -522,11 +518,9 @@ footer .logo:hover svg {
     }
 
 
-
     .sec3 .inner {
         padding: 80px 20px 0 20px;
     }
-
 
 
     .sec4 .inner {
@@ -537,15 +531,14 @@ footer .logo:hover svg {
     }
 
 
-
     footer .inner {
         padding: 42px 20px;
     }
 
 }
 
-
-@media screen and (max-width: 900px) {
+/* Small devices (Tablets) */
+@media screen and (max-width: 992px) {
 
     footer .inner {
         padding: 42px 10px 42px 20px;
@@ -571,8 +564,8 @@ footer .logo:hover svg {
 
 }
 
-
-@media screen and (max-width: 770px) {
+/* Extra small devices (Phones) */
+@media screen and (max-width: 768px) {
 
     .sec1 {
         background: url("../img/bg-small.jpg") no-repeat bottom left;
@@ -609,7 +602,6 @@ footer .logo:hover svg {
     }
 
 
-
     .sec2 .title {
         font-size: 28px;
     }
@@ -624,7 +616,6 @@ footer .logo:hover svg {
     .sec2 .tiles-wrap li:last-child {
         border-bottom: none;
     }
-
 
 
     .sec3 .inner {
@@ -644,7 +635,6 @@ footer .logo:hover svg {
         border-left: none;
         border-right: none;
     }
-
 
 
     .sec4 .inner {
@@ -671,13 +661,14 @@ footer .logo:hover svg {
 
 
 @media screen and (max-width: 480px) {
+
     header .inner {
         margin: 0 20px;
     }
 
 
-
     .sec1 .inner {
         padding: 60px 20px;
     }
+
 }
