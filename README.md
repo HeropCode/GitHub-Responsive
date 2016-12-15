@@ -138,3 +138,15 @@ $(function () {
 
 });
 ```
+
+## Media(Grid) Options
+
+
+| 종류 | 디바이스 | 단위(px) |
+|:---:|:---:|:---:|
+| Large devices | Desktops | 1201px 이상 |
+| Medium devices | Desktops | 1200px 이하 |
+| Small devices | Tablets | 992px 이하 |
+| Extra small devices | Phones | 768px 이하 |
+| 기타 | Desktops, Tablets | 1348px 이하 |
+| 기타 | Phones | 480px 이하 |
