@@ -195,7 +195,7 @@ header .toggle.on {
 .sec1 .lead {
     font-size: 26px;
     font-weight: 300;
-    text-shadow: 0 1px 1px rgba(0,0,0,0.25),0 1px 25px rgba(0,0,0,0.75);
+    text-shadow: 0 1px 1px rgba(0,0,0,0.25), 0 1px 25px rgba(0,0,0,0.75);
     color: #fff;
     line-height: 1.5;
 }
@@ -318,7 +318,7 @@ header .toggle.on {
     line-height: 1.5;
     margin-bottom: 40px;
 }
-.sec3 .map {
+.sec3 #map {
     width: 100% !important;
     height: 400px;
     border: 1px solid rgba(0,0,0,0.2);
@@ -631,7 +631,7 @@ footer .logo:hover svg {
     .sec3 .lead {
         font-size: 21px;
     }
-    .sec3 .map {
+    .sec3 #map {
         border-left: none;
         border-right: none;
     }
