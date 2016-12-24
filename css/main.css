@@ -253,7 +253,7 @@ header .toggle.on {
     max-width: 650px;
     margin: 50px auto;
 }
-.sec2 .iframe-wrap {
+.sec2 .video .iframe-wrap {
     position: relative;
     padding-bottom: 56.25%;
     height: 0;
