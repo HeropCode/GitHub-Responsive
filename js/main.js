@@ -32,7 +32,7 @@ $(function () {
     });
 
     $(window).on('resize', function () {
-        if ($(this).width() > 1020) $toggle.removeClass('on');
+        if ($(this).width() > 1200) $toggle.removeClass('on');
     });
 
     $signInput.on('keydown', function (event) {
