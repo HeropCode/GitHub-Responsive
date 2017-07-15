@@ -4,7 +4,7 @@ GitHub 메인 소개 페이지 (반응형)
 
 ## View Site
 
-[GitHub](http://herop.me/github)
+[GitHub](https://heropcode.github.io/GitHub-Responsive/)
 
 ## TEXT
 
