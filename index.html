@@ -33,7 +33,6 @@
     <script src="js/plugins/jquery.easing.min.js"></script>
 
     <script src="js/main.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTQIlxBn5AfKGvsfJiormAE1esN3fcCkg&callback=initMap" async defer></script>
 
 </head>
 <body>
@@ -163,28 +162,6 @@
             </div>
 
             <div id="map"></div>
-            <script>
-              function initMap() {
-
-                var myLatLng = {
-                  lat: 37.782293,
-                  lng: -122.391240
-                };
-
-                var map = new google.maps.Map(document.getElementById('map'), {
-                  center: myLatLng,
-                  scrollwheel: false,
-                  zoom: 18
-                });
-
-                var marker = new google.maps.Marker({
-                  position: myLatLng,
-                  map: map,
-                  title: 'GitHub'
-                });
-
-              }
-            </script>
 
         </div>
     </section>
@@ -246,5 +223,29 @@
 
 
 </div>
+<script>
+  // Initialize Google Map.
+  function initMap() {
+
+    var myLatLng = {
+      lat: 37.782293,
+      lng: -122.391240
+    };
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: myLatLng,
+      scrollwheel: false,
+      zoom: 18
+    });
+
+    var marker = new google.maps.Marker({
+      position: myLatLng,
+      map: map,
+      title: 'GitHub'
+    });
+
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTQIlxBn5AfKGvsfJiormAE1esN3fcCkg&callback=initMap" async defer></script>
 </body>
 </html>
