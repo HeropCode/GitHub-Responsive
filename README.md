@@ -80,7 +80,7 @@ AIzaSyCTQIlxBn5AfKGvsfJiormAE1esN3fcCkg
 <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
 ```
 
-'SVG' 를 코드로 입력하세요.
+'SVG' 이미지를 코드로 입력하세요.
 
 ```html
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 16 16" fill="#ccc">
@@ -148,9 +148,7 @@ $(function () {
 
 | 종류 | 디바이스 | 단위(px) |
 |:---:|:---:|:---:|
-| Large devices | Desktops | 1201px 이상 |
-| Medium devices | Desktops | 1200px 이하 |
-| Small devices | Tablets | 992px 이하 |
-| Extra small devices | Phones | 768px 이하 |
-| 기타 | Desktops, Tablets | 1348px 이하 |
-| 기타 | Phones | 480px 이하 |
+| Large Devices | Desktops | 1201px 이상 |
+| Medium Devices | Desktops + Tablets | 1200px 이하 |
+| Small Devices | Tablets | 992px 이하 |
+| Extra Small Devices | Phones | 768px 이하 |
