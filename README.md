@@ -1,4 +1,4 @@
-# GitHub Main Page
+# GitHub main page
 
 GitHub 사이트의 메인 페이지를 반응형으로 작업합니다.
 
@@ -7,6 +7,8 @@ GitHub 사이트의 메인 페이지를 반응형으로 작업합니다.
 [GitHub Responsive 예제](https://heropcode.github.io/GitHub-Responsive/)
 
 ## Text
+
+### General text
 
 ```
 Personal
