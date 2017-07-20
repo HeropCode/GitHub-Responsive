@@ -71,12 +71,13 @@ https://www.youtube.com/watch?v=afvT1c1ii0c
 
 ### `index.html`
 
-'Google Map API' 를 호출하세요.  
-`YOUR_API_KEY` 에 아래의 'API KEY' 를 입력하세요.('KEY' 정보는 변경될 수 있습니다!)
+'Google Map API' 를 호출하세요.
 
 ```
 AIzaSyCTQIlxBn5AfKGvsfJiormAE1esN3fcCkg
-```
+```  
+
+아래 코드의 `YOUR_API_KEY` 부분에 위 'KEY'를 입력하세요.('KEY' 정보는 변경될 수 있습니다!)
 
 ```html
 <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
@@ -94,7 +95,7 @@ AIzaSyCTQIlxBn5AfKGvsfJiormAE1esN3fcCkg
 
 #### Insert Google Map.
 
-`initMap` 함수에 'Google Map' 에서 사용할 'Option' 을 입력하세요.
+`initMap` 함수에 'Google Map'에서 사용할 'Option'을 입력하세요.
 
 ```js
 function initMap() {
@@ -129,7 +130,7 @@ $(function () {
     });
 
     $(window).on('resize', function () {
-        if ($(this).width() > 1020) {
+        if ($(this).width() > 1200) {
             $('.toggle').removeClass('on');
         }
     });
