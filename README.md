@@ -1,14 +1,14 @@
-# GitHub
+# GitHub Main Page
 
-GitHub 메인 소개 페이지 (반응형)
+GitHub 사이트의 메인 페이지를 반응형으로 작업합니다.
 
-## View Site
+## Example
 
-[GitHub Responsive](https://heropcode.github.io/GitHub-Responsive/)
+[GitHub Responsive 예제](https://heropcode.github.io/GitHub-Responsive/)
 
-## TEXT
+## Text
 
-```text
+```
 Personal
 Open source
 Business
@@ -59,20 +59,20 @@ Blog
 About
 ```
 
-## LINK
+### Video link
 
-```text
+```
 https://www.youtube.com/watch?v=afvT1c1ii0c
 ```
 
-## CODE
+## Code
 
-### index.html
+### `index.html`
 
 'Google Map API' 를 호출하세요.  
 `YOUR_API_KEY` 에 아래의 'API KEY' 를 입력하세요.('KEY' 정보는 변경될 수 있습니다!)
 
-```text
+```
 AIzaSyCTQIlxBn5AfKGvsfJiormAE1esN3fcCkg
 ```
 
@@ -88,7 +88,9 @@ AIzaSyCTQIlxBn5AfKGvsfJiormAE1esN3fcCkg
 </svg>
 ```
 
-### main.js
+### `main.js`
+
+#### Insert Google Map.
 
 `initMap` 함수에 'Google Map' 에서 사용할 'Option' 을 입력하세요.
 
@@ -112,39 +114,36 @@ function initMap() {
         map: map,
         title: 'GitHub'
     });
-
 }
 ```
 
-기타 JavaScript.
+#### Write JavaScript code.
 
 ```js
 $(function () {
 
-    var $toggle = $('.toggle');
-    var $toggleBtn = $('#toggle-btn');
-    var $signInput = $('.sign-form input');
-
-    $toggleBtn.on('click', function () {
-            $toggle.toggleClass('on');
+    $('#toggle-btn').on('click', function () {
+        $('.toggle').toggleClass('on');
     });
 
     $(window).on('resize', function () {
-        if ($(this).width() > 1020) $toggle.removeClass('on');
+        if ($(this).width() > 1020) {
+            $('.toggle').removeClass('on');
+        }
     });
 
-    $signInput.on('keydown', function (event) {
+    $('.sign-form input').on('keydown', function (event) {
         if (event.which === 13) {
             event.preventDefault();
             $(event.target).parent().next().find('input, button').focus();
         }
     });
-
 });
 ```
 
-## Media(Grid) Options
+## Media(Grid) options
 
+> 디바이스 종류에 따른 단위는 '기획 / 디자인' 단계에서 결정하는 것이 효과적입니다.
 
 | 종류 | 디바이스 | 단위(px) |
 |:---:|:---:|:---:|
