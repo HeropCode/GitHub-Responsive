@@ -23,6 +23,9 @@
     text-align: center;
     display: block;
     background: #eee linear-gradient(#fcfcfc, #eee);
+    /*
+    background: linear-gradient(DIRECTION, COLOR1, COLOR2, ...);
+    */
     cursor: pointer;
     box-sizing: border-box;
 }
@@ -76,6 +79,10 @@
 header {
     border-bottom: 1px solid rgba(0,0,0,.75);
     box-shadow: 0 0 5px rgba(0,0,0,.75);
+    /*
+    box-shadow: X Y BLUR SPREAD COLOR;
+    box-shadow: 0 0 0 0 rgb(0,0,0);
+    */
     background: #fff;
     margin-bottom: -1px;
 }
@@ -83,15 +90,14 @@ header .inner {
     max-width: 980px;
     margin: 0 auto;
     padding: 20px 0;
-    position: relative;
 }
 header .logo {
+    background: url("../img/logo.svg");
     width: 32px;
     height: 32px;
-    margin-right: 5px;
-    background: url("../img/logo.svg");
     display: block;
     float: left;
+    margin-right: 5px;
 }
 header .logo:hover {
     background: url("../img/logo_on.svg");
@@ -153,19 +159,6 @@ header .sub-menu li a {
 header .sub-menu li a:hover {
     font-weight: 500;
 }
-#toggle-btn {
-    background: url("../img/menu-toggle.svg");
-    width: 18px;
-    height: 24px;
-    position: absolute;
-    top: 14px;
-    right: 0;
-    cursor: pointer;
-    display: none;
-}
-header .toggle.on {
-    display: block;
-}
 
 
 /* VISUAL */
@@ -186,9 +179,8 @@ header .toggle.on {
 }
 .visual .inner {
     max-width: 980px;
-    height: 684px;
     margin: 0 auto;
-    padding-top: 180px;
+    padding: 160px 0;
     position: relative;
     box-sizing: border-box;
 }
@@ -280,16 +272,18 @@ header .toggle.on {
     padding: 34px 24px;
     float: left;
     text-align: center;
-    border-right: 1px solid #e5e5e5;
     line-height: 1.5;
+    border-right: 1px solid #e5e5e5;
+    box-sizing: border-box;
 }
 .feature .tiles li:last-child {
     border-right: none;
 }
 .feature .tiles li img {
-    max-width: 204px;
+    max-width: 100%;
+    padding: 0 10%;
     margin: 14px 0 24px 0;
-    vertical-align: bottom;
+    box-sizing: border-box;
 }
 .feature .tiles li h4 {
     font-size: 16px;
@@ -302,23 +296,24 @@ header .toggle.on {
 
 
 /* WHERE IS GITHUB */
-.whereis {
+.where-is {
     overflow: hidden;
 }
-.whereis .inner {
+.where-is .inner {
     max-width: 980px;
     margin: 0 auto;
     padding-top: 80px;
 }
-.whereis .title {
+.where-is .title {
 
 }
-.whereis .desc {
-    margin-bottom: 40px;
+.where-is .desc {
+
 }
 #map {
     width: 100%;
     height: 400px;
+    margin-top: 40px;
     border: 1px solid rgba(0,0,0,.2);
     border-bottom: none;
     box-shadow: 0 0 20px rgba(0,0,0,.2);
@@ -342,24 +337,24 @@ header .toggle.on {
     border-radius: 6px;
     box-shadow: 0 1px 1px rgba(0,0,0,.1);
 }
-.pricing .card .cell1 {
+.pricing .card .cell {
     display: table-cell;
     padding: 24px;
-    white-space: nowrap;
     vertical-align: middle;
-    border-right: 1px solid #e5e5e5;
+    line-height: 1.5;
+}
+.pricing .card .cell1 {
     font-weight: 500;
+    white-space: nowrap;
+    border-right: 1px solid #e5e5e5;
 }
 .pricing .card .cell1 .sign-up {
-    padding: 12px 20px;
-    font-size: 16px;
+    padding: 12px 24px;
     border-radius: 6px;
+    font-size: 16px;
 }
 .pricing .card .cell2 {
-    display: table-cell;
-    padding: 24px;
     font-size: 22px;
-    line-height: 1.5;
     font-weight: 300;
 }
 
@@ -381,49 +376,38 @@ footer .site-links li {
     margin-right: 10px;
     color: #767676;
 }
+footer .site-links li:last-child {
+    margin-right: 0;
+}
 footer .site-links li a {
     color: #4078c0;
 }
 footer .site-links li a:hover {
     text-decoration: underline;
 }
-footer .site-links li:last-child {
-    margin-right: 0;
-}
 footer .logo {
+    width: 24px;
+    height: 24px;
     position: absolute;
-    top: 38px;
-    left: 50%;
-    margin-left: -12px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 footer .logo:hover svg {
     fill: #4078c0;
 }
 
 
-/* MEDIA */
-@media screen and (max-width: 1348px) {
-
-    .feature .tiles li {
-        max-width: 25%;
-        box-sizing: border-box;
-    }
-    .feature .tiles li img {
-        max-width: 100%;
-        padding: 0 10%;
-        box-sizing: border-box;
-    }
-}
-
-
-/* Medium Devices (Desktops) */
+/* MEDIA QUERY */
+/* Medium Devices (Desktops + Tablets) */
 @media (max-width: 1200px) {
-
     header .inner {
         max-width: 1200px;
-        margin: 0 40px;
+        margin: 0 20px;
         padding: 10px 0;
-        box-sizing: border-box;
+        position: relative;
     }
     header .inner-left,
     header .inner-right {
@@ -449,9 +433,9 @@ footer .logo:hover svg {
         margin-top: 10px;
     }
     header .btn-group .sign-in {
+        float: none;
         margin-right: 0;
         margin-bottom: 12px;
-        float: none;
     }
     header .btn-group .sign-up {
         float: none;
@@ -467,35 +451,39 @@ footer .logo:hover svg {
         text-align: center;
     }
     header .sub-menu {
+        float: none;
         display: table;
         margin: 12px auto 0 auto;
-        float: none;
     }
-    #toggle-btn {
+    /* 토글될 요소들만 `toggle`클래스 부여 */
+    header .toggle {
+       display: none;
+    }
+    header .toggle.on {
         display: block;
     }
-    header .toggle {
-        display: none;
+    /* 토글 버튼 */
+    #toggle-btn {
+        background: url("../img/menu-toggle.svg");
+        width: 18px;
+        height: 24px;
+        position: absolute;
+        top: 14px;
+        right: 0;
+        cursor: pointer;
     }
 
 
     .visual .inner {
-        height: 462px;
-        padding: 60px 40px 40px 40px;
+        padding: 60px 40px;
     }
     .visual .description {
         width: 55%;
         margin-right: 5%;
     }
-    .visual .title {
-        font-size: 48px;
-    }
     .visual .sign-form {
         max-width: 40%;
         margin-top: 16px;
-    }
-    .visual .desc {
-        font-size: 24px;
     }
 
 
@@ -513,8 +501,8 @@ footer .logo:hover svg {
     }
 
 
-    .whereis .inner {
-        padding: 80px 20px 0 20px;
+    .where-is .inner {
+        padding: 80px 40px 0 40px;
     }
 
 
@@ -534,10 +522,6 @@ footer .logo:hover svg {
 
 /* Small Devices (Tablets) */
 @media (max-width: 992px) {
-
-    footer .inner {
-        padding: 42px 10px 42px 20px;
-    }
     footer .inner-left,
     footer .inner-right {
         float: none;
@@ -546,7 +530,7 @@ footer .logo:hover svg {
         line-height: 1.5;
         text-align: center;
     }
-    footer .site-links:first-of-type {
+    footer .site-links:first-child {
         margin-bottom: 10px;
     }
     footer .site-links li {
@@ -561,6 +545,13 @@ footer .logo:hover svg {
 
 /* Extra Small Devices (Phones) */
 @media (max-width: 768px) {
+    .description .title {
+        font-size: 36px;
+    }
+    .description .desc {
+        font-size: 21px;
+    }
+
 
     .visual {
         background: url("../img/bg-small.jpg") no-repeat bottom left;
@@ -568,7 +559,7 @@ footer .logo:hover svg {
     }
     .visual .inner {
         height: auto;
-        padding: 60px 40px;
+        padding: 60px 20px;
     }
     .visual .inner-left,
     .visual .inner-right {
@@ -579,15 +570,8 @@ footer .logo:hover svg {
         margin-right: 0;
         text-align: center;
     }
-    .visual .title {
-        font-size: 36px;
-        margin-bottom: 16px;
-    }
-    .visual .desc {
-        font-size: 21px;
-    }
     .visual .sign-form {
-        max-width: 340px;
+        max-width: 400px;
         margin: 16px auto 0 auto;
     }
     .visual .sign-form .sign-up {
@@ -596,12 +580,6 @@ footer .logo:hover svg {
     }
 
 
-    .feature .title {
-        font-size: 28px;
-    }
-    .feature .desc {
-        font-size: 21px;
-    }
     .feature .tiles li {
         max-width: 100%;
         border-right: none;
@@ -612,18 +590,12 @@ footer .logo:hover svg {
     }
 
 
-    .whereis .inner {
+    .where-is .inner {
         padding: 80px 0 0 0;
     }
-    .whereis .description {
-        text-align: center;
+    .where-is .description {
         padding: 0 20px;
-    }
-    .whereis .title {
-        font-size: 28px;
-    }
-    .whereis .desc {
-        font-size: 21px;
+        text-align: center;
     }
     #map {
         border-left: none;
@@ -642,18 +614,5 @@ footer .logo:hover svg {
     .pricing .card .cell2 {
         display: block;
         font-size: 18px;
-    }
-}
-
-
-@media (max-width: 480px) {
-
-    header .inner {
-        margin: 0 20px;
-    }
-
-
-    .visual .inner {
-        padding: 60px 20px;
     }
 }
