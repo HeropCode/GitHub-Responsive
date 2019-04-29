@@ -2,7 +2,7 @@
 
 
 /* COMMON */
-.container {
+.body-container {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -76,7 +76,7 @@
 
 
 /* HEADER */
-header {
+#header {
     border-bottom: 1px solid rgba(0,0,0,.75);
     box-shadow: 0 0 5px rgba(0,0,0,.75);
     /*
@@ -86,48 +86,50 @@ header {
     background: #fff;
     margin-bottom: -1px;
 }
-header .inner {
+#header .inner {
     max-width: 980px;
     margin: 0 auto;
     padding: 20px 0;
 }
-header .logo {
+#header .logo {
     background: url("../img/logo.svg");
     width: 32px;
     height: 32px;
     display: block;
     float: left;
     margin-right: 5px;
+    /* 대체텍스트 */
+    text-indent: -9999px;
 }
-header .logo:hover {
+#header .logo:hover {
     background: url("../img/logo_on.svg");
 }
-header .main-menu {
+#header .main-menu {
     float: left;
 }
-header .main-menu li {
+#header .main-menu li {
     float: left;
 }
-header .main-menu li a {
+#header .main-menu li a {
     padding: 8px 10px;
     color: #3c4146;
     line-height: 1.3;
     display: block;
 }
-header .main-menu li a:hover {
+#header .main-menu li a:hover {
     font-weight: 500;
 }
-header .btn-group {
+#header .btn-group {
     float: right;
 }
-header .btn-group .sign-in {
+#header .btn-group .sign-in {
     margin-right: 4px;
     float: left;
 }
-header .btn-group .sign-up {
+#header .btn-group .sign-up {
     float: left;
 }
-header .search-form {
+#header .search-form {
     float: right;
     margin-right: 12px;
 }
@@ -142,22 +144,25 @@ header .search-form {
 #search + input[type="submit"] {
     display: none;
 }
-header .sub-menu {
+#header .sub-menu {
     float: right;
     margin-right: 10px;
 }
-header .sub-menu li {
+#header .sub-menu li {
     float: left;
 }
-header .sub-menu li a {
+#header .sub-menu li a {
     padding: 8px;
     color: #3c4146;
     font-size: 13px;
     line-height: 1.5;
     display: block;
 }
-header .sub-menu li a:hover {
+#header .sub-menu li a:hover {
     font-weight: 500;
+}
+#toggle-btn {
+    display: none;
 }
 
 
@@ -403,67 +408,68 @@ footer .logo:hover svg {
 /* MEDIA QUERY */
 /* Medium Devices (Desktops + Tablets) */
 @media (max-width: 1200px) {
-    header .inner {
+    #header .inner {
         max-width: 1200px;
         margin: 0 20px;
         padding: 10px 0;
         position: relative;
     }
-    header .inner-left,
-    header .inner-right {
+    #header .inner-left,
+    #header .inner-right {
         float: none;
     }
-    header .logo {
+    #header .logo {
         float: none;
     }
-    header .main-menu {
+    #header .main-menu {
         float: none;
         margin-top: 10px;
     }
-    header .main-menu li {
+    #header .main-menu li {
         float: none;
         border-top: 1px solid #e5e5e5;
     }
-    header .main-menu li a {
+    #header .main-menu li a {
         padding: 16px 0;
         line-height: 1;
     }
-    header .btn-group {
+    #header .btn-group {
         float: none;
         margin-top: 10px;
     }
-    header .btn-group .sign-in {
+    #header .btn-group .sign-in {
         float: none;
         margin-right: 0;
         margin-bottom: 12px;
     }
-    header .btn-group .sign-up {
+    #header .btn-group .sign-up {
         float: none;
     }
-    header .search-form {
+    #header .search-form {
         float: none;
         margin-top: 12px;
         margin-right: 0;
     }
-    header #search {
+    #header #search {
         width: 100%;
         height: 42px;
         text-align: center;
     }
-    header .sub-menu {
+    #header .sub-menu {
         float: none;
         display: table;
         margin: 12px auto 0 auto;
     }
     /* 토글될 요소들만 `toggle`클래스 부여 */
-    header .toggle {
+    #header .toggle {
        display: none;
     }
-    header .toggle.on {
+    #header .toggle.on {
         display: block;
     }
     /* 토글 버튼 */
     #toggle-btn {
+        display: block;
         background: url("../img/menu-toggle.svg");
         width: 18px;
         height: 24px;
@@ -471,6 +477,7 @@ footer .logo:hover svg {
         top: 14px;
         right: 0;
         cursor: pointer;
+        text-indent: -9999px;
     }
 
 
