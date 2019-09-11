@@ -1,0 +1,135 @@
+/* HEADER */
+/* 선택자 우선순위 */
+header.section .inner {
+  max-width: none; /* 초기화 */
+  height: auto;
+  padding: 0 20px;
+}
+header .inner__menu-group,
+header .inner__sign-group {
+  float: none;
+}
+header .inner__menu-group {
+  display: block;
+}
+header .logo {
+  padding: 12px 0;
+}
+header .main-menu {
+  margin-top: 10px;
+}
+header .main-menu li {
+  border-top: 1px solid #e5e5e5;
+}
+header .main-menu li a {
+  padding: 16px 0;
+}
+header .inner__sign-group {
+  padding: 10px 0 20px;
+}
+header .btn-group {
+  display: block;
+}
+header .btn-group .btn {
+  justify-content: center;
+}
+header .btn-group .sign-in {
+  margin-right: 0;
+  margin-bottom: 12px;
+}
+#search-form {
+  margin-top: 12px;
+  margin-right: 0;
+}
+#search {
+  width: 100%;
+  height: 42px;
+  text-align: center;
+}
+header .sub-menu {
+  margin-top: 12px;
+  margin-right: 0;
+  justify-content: center;
+}
+/* 토글될 요소들만 `toggle`클래스 부여 */
+header .toggle {
+  display: none;
+}
+header .toggle.on {
+  display: block;
+}
+/* 토글 버튼 */
+#toggle-btn {
+  display: block;
+}
+
+
+/* VISUAL */
+.section--visual {
+  background-image: url("../img/bg-small.jpg");
+}
+.section--visual .inner {
+  max-width: none;
+  padding: 80px 20px;
+  display: block;
+}
+.section--visual .summary {
+  text-align: center;
+  margin-right: 0;
+  margin-bottom: 50px;
+}
+#sign-form {
+  width: auto;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+
+/* FEATURE */
+.section--feature .summary {
+  padding: 66px 20px 0 20px;
+}
+/* Float을 사용한 방법 */
+.section--feature .tiles ul {}
+.section--feature .tiles li {
+  max-width: 50%;
+}
+/* Grid를 사용한 방법 */
+/*
+  .section--feature .tiles ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section--feature .tiles li {}
+*/
+.section--feature .tiles li:nth-child(2) {
+  border-right: none;
+}
+.section--feature .tiles li img {
+  padding: 0 30%;
+}
+
+
+/* WHERE IS GITHUB */
+.section--where-is .inner {
+  max-width: none;
+  padding: 80px 20px 0 20px;
+}
+
+
+/* PRICING CARD */
+.section--pricing .inner {
+  max-width: none;
+  padding: 80px 20px;
+}
+.section--pricing .card .cell2 {
+  font-size: 20px;
+}
+
+
+/* FOOTER */
+footer .inner {
+  padding: 50px 20px;
+}
+footer .logo {
+  display: none;
+}

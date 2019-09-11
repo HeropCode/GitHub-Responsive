@@ -1,0 +1,71 @@
+/* COMMON */
+.summary__title {
+  font-size: 34px !important; /* For .section--visual .summary__title */
+}
+.summary__description {
+  font-size: 22px;
+}
+
+
+/* FEATURE */
+/* Float을 사용한 방법 */
+.section--feature .tiles ul {}
+.section--feature .tiles li {
+  max-width: 100%;
+  border-right: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Grid를 사용한 방법 */
+/*
+  .section--feature .tiles ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section--feature .tiles li {
+    border-right: none;
+    border-bottom: 1px solid #e5e5e5;
+  }
+*/
+.section--feature .tiles li:last-child {
+  border-bottom: none;
+}
+.section--feature .tiles li img {
+  padding: 0 30%;
+}
+
+
+/* WHERE IS GITHUB */
+#map {
+  width: auto;
+  margin: 40px -20px 0 -20px;
+  border-left: none;
+  border-right: none;
+}
+
+
+/* PRICING CARD */
+.section--pricing .card {
+  display: block;
+}
+.section--pricing .card .cell1 {
+}
+.section--pricing .card .cell2 {
+  border-left: none;
+  border-top: 1px solid #e5e5e5;
+}
+
+
+/* FOOTER */
+footer .float--left,
+footer .float--right {
+  float: none;
+}
+footer .site-links {
+  display: block;
+  text-align: center;
+}
+footer .site-links:first-child {
+  margin-bottom: 20px;
+}
+footer .site-links li {
+  display: inline;
+}

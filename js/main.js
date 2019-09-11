@@ -1,30 +1,28 @@
 (function (window, document) {
   'use strict';
 
-  const $toggle = document.querySelectorAll('.toggle');
-  const $toggleBtn = document.querySelector('#toggle-btn');
-  const $signForm = document.querySelector('.sign-form');
-  const $signInput = $signForm.querySelector('input[type=text]');
-  const $signSubmit = $signForm.querySelector('input[type=submit]');
+  const $toggles = document.querySelectorAll('.toggle'); // Return NodeList
+  const $toggleBtn = document.getElementById('toggle-btn'); // Return Element
   
   $toggleBtn.addEventListener('click', function () {
-    $toggle.forEach(function (toggle) {
-      toggle.classList.toggle('on');
-    });
+    onToggleElement();
   });
 
   window.addEventListener('resize', function () {
-    if (window.innerWidth > 1200) {
-      $toggle.forEach(toggle => {
-        toggle.classList.remove('on');
-      });
+    if (window.innerWidth > 1020) {
+      offToggleElement();
     }
   });
 
-  $signInput.addEventListener('keydown', function (event) {
-    if (event.which === 13) { // ENTER key
-      event.preventDefault();
-      $signSubmit.focus();
-    }
-  })
-})(window, document)
+  function onToggleElement() {
+    [].forEach.call($toggles, function (toggle) {
+      toggle.classList.toggle('on');
+    });
+  }
+
+  function offToggleElement() {
+    [].forEach.call($toggles, function (toggle) {
+      toggle.classList.remove('on');
+    });
+  }
+})(window, document);

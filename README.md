@@ -71,6 +71,24 @@ https://www.youtube.com/watch?v=afvT1c1ii0c
 
 ### `index.html`
 
+```html
+<!-- http://ogp.me/ -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GitHub">
+<meta property="og:title" content="Build software better, together">
+<meta property="og:description" content="GitHub clone coding / GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects.">
+<meta property="og:image" content="img/github-logo.png">
+<meta property="og:url" content="https://github.com">
+
+<!-- https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html -->
+<meta property="twitter:card" content="summary">
+<meta property="twitter:site" content="GitHub">
+<meta property="twitter:title" content="Build software better, together">
+<meta property="twitter:description" content="GitHub clone coding / GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects.">
+<meta property="twitter:image" content="img/github-logo.png">
+<meta property="twitter:url" content="https://github.com">
+```
+
 'Google Map API' 를 호출하세요.
 
 ```
@@ -101,18 +119,18 @@ AIzaSyCTQIlxBn5AfKGvsfJiormAE1esN3fcCkg
 function initMap() {
 
     // 위도(Latitude), 경도(Longitude)
-    var myLatLng = {
+    const myLatLng = {
         lat: 37.782293,
         lng: -122.391240
     };
 
-    var map = new google.maps.Map(document.getElementById('map'), {
+    const map = new google.maps.Map(document.getElementById('map'), {
         center: myLatLng,
         scrollwheel: false,
         zoom: 18
     });
 
-    var marker = new google.maps.Marker({
+    const marker = new google.maps.Marker({
         position: myLatLng,
         map: map,
         title: 'GitHub'
@@ -123,25 +141,34 @@ function initMap() {
 #### Write JavaScript code.
 
 ```js
-$(function () {
+(function (window, document) {
+  'use strict';
 
-    $('#toggle-btn').on('click', function () {
-        $('.toggle').toggleClass('on');
-    });
+  const $toggles = document.querySelectorAll('.toggle'); // Return NodeList
+  const $toggleBtn = document.getElementById('toggle-btn'); // Return Element
+  
+  $toggleBtn.addEventListener('click', function () {
+    onToggleElement();
+  });
 
-    $(window).on('resize', function () {
-        if ($(this).width() > 1200) {
-            $('.toggle').removeClass('on');
-        }
-    });
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 1020) {
+      offToggleElement();
+    }
+  });
 
-    $('.sign-form input').on('keydown', function (event) {
-        if (event.which === 13) {
-            event.preventDefault();
-            $(event.target).parent().next().find('input, button').focus();
-        }
+  function onToggleElement() {
+    [].forEach.call($toggles, function (toggle) {
+      toggle.classList.toggle('on');
     });
-});
+  }
+
+  function offToggleElement() {
+    [].forEach.call($toggles, function (toggle) {
+      toggle.classList.remove('on');
+    });
+  }
+})(window, document);
 ```
 
 ## Media(Grid) options
@@ -150,7 +177,6 @@ $(function () {
 
 | 종류 | 디바이스 | 단위(px) |
 |:---:|:---:|:---:|
-| Large Devices | Desktops | 1201px 이상 |
-| Medium Devices | Desktops + Tablets | 1200px 이하 |
-| Small Devices | Tablets | 992px 이하 |
-| Extra Small Devices | Phones | 768px 이하 |
+| Large Devices | Desktops | 1024px 이상 |
+| Medium Devices | Tablets | 1024px 이하 |
+| Small Devices | Tablets + Phones | 768px 이하 |

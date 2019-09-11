@@ -1,249 +1,257 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>GitHub</title>
+  <meta charset="UTF-8">
+  <title>GitHub</title>
 
-    <meta name="author" content="HEROPY">
-    <meta name="description" content="GitHub clone coding / GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects.">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+  <meta name="author" content="HEROPY">
+  <meta name="description"
+        content="GitHub clone coding / GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects.">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
 
-    <!-- http://ogp.me/ -->
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="GitHub">
-    <meta property="og:title" content="Build software better, together">
-    <meta property="og:description" content="GitHub clone coding / GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects.">
-    <meta property="og:image" content="img/github-logo.png">
-    <meta property="og:url" content="https://github.com">
+  <!-- http://ogp.me/ -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="GitHub">
+  <meta property="og:title" content="Build software better, together">
+  <meta property="og:description"
+        content="GitHub clone coding / GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects.">
+  <meta property="og:image" content="img/logo__github.png">
+  <meta property="og:url" content="https://github.com">
 
-    <!-- https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html -->
-    <meta property="twitter:card" content="summary">
-    <meta property="twitter:site" content="GitHub">
-    <meta property="twitter:title" content="Build software better, together">
-    <meta property="twitter:description" content="GitHub clone coding / GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects.">
-    <meta property="twitter:image" content="img/github-logo.png">
-    <meta property="twitter:url" content="https://github.com">
+  <!-- https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html -->
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:site" content="GitHub">
+  <meta property="twitter:title" content="Build software better, together">
+  <meta property="twitter:description"
+        content="GitHub clone coding / GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects.">
+  <meta property="twitter:image" content="img/logo__github.png">
+  <meta property="twitter:url" content="https://github.com">
 
-    <!-- 별도의 연결없이 루트 경로에 `favicon.ico`가 있는 것으로 IE 지원이 가능합니다. -->
-    <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
-    <link rel="icon" href="favicon.png">
-    <link rel="apple-touch-icon" href="favicon.png">
+  <!-- 별도의 연결없이 루트 경로에 `favicon.ico`가 있는 것으로 IE 지원이 가능합니다. -->
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
+  <link rel="icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="css/reset.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" media="all and (max-width: 1024px)" href="css/main_1024.css">
+  <link rel="stylesheet" media="all and (max-width: 768px)" href="css/main_768.css">
 
-    <!--[if lt ie 9]>
-    <script src="js/lib/ie9.js"></script>
-    <script src="js/lib/respond.min.js"></script>
-    <![endif]-->
-    <script src="js/lib/modernizr-2.8.3.min.js"></script>
-    <script src="js/plugins/prefixfree.min.js"></script>
-
-    <script defer src="js/main.js"></script>
+  <script defer src="js/main.js"></script>
 </head>
 <body>
-<div class="body-container">
+<div class="body__container">
 
-    <!--HEADER-->
-    <header id="header">
-        <div class="inner clearfix">
+  <!--HEADER-->
+  <header class="section">
+    <div class="inner clearfix">
 
-            <div class="inner-left clearfix">
-                <a class="logo" href="#">Github</a>
-
-                <ul class="main-menu toggle clearfix">
-                    <li><a href="#">Personal</a></li>
-                    <li><a href="#">Open source</a></li>
-                    <li><a href="#">Business</a></li>
-                    <li><a href="#">Explore</a></li>
-                </ul>
-            </div>
-
-            <div class="inner-right toggle clearfix">
-                <div class="btn-group clearfix">
-                    <a class="btn sign-in" href="#">Sign in</a>
-                    <a class="btn btn-primary sign-up" href="#">Sign up</a>
-                </div>
-
-                <form class="search-form" method="post" action="">
-                    <input id="search" class="input" type="text" placeholder="Search GitHub">
-                    <input type="submit">
-                </form>
-
-                <ul class="sub-menu clearfix">
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Support</a></li>
-                </ul>
-            </div>
-
-            <div id="toggle-btn">Header Menu Toggle Button</div>
-
-        </div>
-    </header>
-
-    <!--VISUAL-->
-    <section class="visual">
-        <div class="inner clearfix">
-
-            <div class="description inner-left">
-                <h1 class="title">How&nbsp;people build&nbsp;software</h1>
-                <p class="desc">Millions of developers use GitHub to build personal projects, support their businesses, and&nbsp;work together on open source technologies.</p>
-            </div>
-
-            <form class="sign-form inner-right" method="post" action="">
-                <ul>
-                    <li><input id="sign-username" class="input" type="text" placeholder="Pick a username"></li>
-                    <li><input id="sign-email" class="input" type="email" placeholder="Your email address"></li>
-                    <li>
-                        <input id="sign-password" class="input" type="password" placeholder="Create a password">
-                        <p class="caption">Use at least one letter, one numeral, and seven characters.</p>
-                    </li>
-                    <li>
-                        <button class="btn btn-primary sign-up" type="submit">Sign up for GitHub</button>
-                        <p class="caption">By clicking "Sign up for GitHub", you agree to our terms of service and privacy policy. We'll occasionally send you account related emails.</p>
-                    </li>
-                </ul>
-            </form>
-
-        </div>
-    </section>
-
-    <!--FEATURE-->
-    <section class="feature">
-
-        <div class="description">
-            <h1 class="title">Welcome home, developers</h1>
-            <p class="desc">GitHub fosters a fast, flexible, and collaborative development process that lets you work on your own or with others.</p>
+      <div class="inner__menu-group float--left">
+        <div class="logo">
+          <a href="#">Github</a>
         </div>
 
-        <div class="video">
-            <div class="video_ratio">
-                <iframe width="520" height="293" src="https://www.youtube.com/embed/afvT1c1ii0c?showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe>
-            </div>
+        <ul class="main-menu toggle">
+          <li><a href="#">Personal</a></li>
+          <li><a href="#">Open source</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">Explore</a></li>
+        </ul>
+      </div>
+
+      <div class="inner__sign-group float--right toggle">
+        <div class="btn-group">
+          <a class="btn sign-in" href="#">Sign in</a>
+          <a class="btn btn--primary sign-up" href="#">Sign up</a>
         </div>
 
-        <div class="tiles">
-            <div class="inner">
+        <form id="search-form" method="post" action="">
+          <input id="search" class="input" type="text" placeholder="Search GitHub">
+          <input type="submit">
+        </form>
 
-                <ul class="clearfix">
-                    <li>
-                        <img src="img/home-ill1-build.png" alt="build">
-                        <h4>For everything you build</h4>
-                        <p>Host and manage your code on GitHub. You can keep your work private or share it with the world.</p>
-                    </li>
-                    <li>
-                        <img src="img/home-ill2-work.png" alt="work">
-                        <h4>A better way to work</h4>
-                        <p>From hobbyists to professionals, GitHub helps developers simplify the way they build software.</p>
-                    </li>
-                    <li>
-                        <img src="img/home-ill3-projects.png" alt="projects">
-                        <h4>Millions of projects</h4>
-                        <p>GitHub is home to millions of open source projects. Try one out or get inspired to create your own.</p>
-                    </li>
-                    <li>
-                        <img src="img/home-ill4-platform.png" alt="platform">
-                        <h4>One platform, from start to finish</h4>
-                        <p>With hundreds of integrations, GitHub is flexible enough to be at the center of your development process.</p>
-                    </li>
-                </ul>
+        <ul class="sub-menu">
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
 
-            </div>
+      <div id="toggle-btn">Header Menu Toggle Button</div>
+
+    </div>
+  </header>
+
+  <!--VISUAL-->
+  <section class="section section--visual">
+    <div class="inner">
+
+      <div class="summary">
+        <h2 class="summary__title">How&nbsp;people build&nbsp;software</h2>
+        <p class="summary__description">Millions of developers use GitHub to build personal projects, support their
+          businesses, and&nbsp;work together on open source technologies.</p>
+      </div>
+
+      <form id="sign-form" method="post" action="">
+        <ol>
+          <li><input class="input" type="text" placeholder="Pick a username"></li>
+          <li><input class="input" type="email" placeholder="Your email address"></li>
+          <li>
+            <input class="input" type="password" placeholder="Create a password">
+            <p class="caption">Use at least one letter, one numeral, and seven characters.</p>
+          </li>
+          <li>
+            <button class="btn btn--primary sign-up" type="submit">Sign up for GitHub</button>
+            <p class="caption">By clicking "Sign up for GitHub", you agree to our terms of service and privacy policy.
+              We'll occasionally send you account related emails.</p>
+          </li>
+        </ol>
+      </form>
+
+    </div>
+  </section>
+
+  <!--FEATURE-->
+  <section class="section section--feature">
+
+    <div class="summary">
+      <h2 class="summary__title">Welcome home, developers</h2>
+      <p class="summary__description">GitHub fosters a fast, flexible, and collaborative development process that lets
+        you work on your own or with others.</p>
+    </div>
+
+    <div class="video">
+      <div class="video_ratio">
+        <iframe width="520" height="293" src="https://www.youtube.com/embed/afvT1c1ii0c?showinfo=0&rel=0"
+                frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="tiles">
+      <div class="inner">
+
+        <ul class="clearfix">
+          <li>
+            <img src="img/feature-tile__build.png" alt="build">
+            <h4>For everything you build</h4>
+            <p>Host and manage your code on GitHub. You can keep your work private or share it with the world.</p>
+          </li>
+          <li>
+            <img src="img/feature-tile__work.png" alt="work">
+            <h4>A better way to work</h4>
+            <p>From hobbyists to professionals, GitHub helps developers simplify the way they build software.</p>
+          </li>
+          <li>
+            <img src="img/feature-tile__projects.png" alt="projects">
+            <h4>Millions of projects</h4>
+            <p>GitHub is home to millions of open source projects. Try one out or get inspired to create your own.</p>
+          </li>
+          <li>
+            <img src="img/feature-tile__platform.png" alt="platform">
+            <h4>One platform, from start to finish</h4>
+            <p>With hundreds of integrations, GitHub is flexible enough to be at the center of your development
+              process.</p>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!--WHERE IS-->
+  <section class="section section--where-is">
+    <div class="inner">
+
+      <div class="summary">
+        <h2 class="summary__title">Where is GitHub?</h2>
+        <p class="summary__description">GitHub is where people build software. More than 18 million people use GitHub to
+          discover, fork, and contribute to over 48 million projects.</p>
+      </div>
+
+      <div id="map"></div>
+
+    </div>
+  </section>
+
+  <!--PRICING CARD-->
+  <section class="section section--pricing">
+    <div class="inner">
+
+      <div class="card">
+        <div class="cell cell1">
+          <a class="btn btn--primary sign-up" href="#">Sign up for GitHub</a>
         </div>
-
-    </section>
-
-    <!--WHERE IS-->
-    <section class="where-is">
-        <div class="inner">
-
-            <div class="description">
-                <h1 class="title">Where is GitHub?</h1>
-                <p class="desc">GitHub is where people build software. More than 18 million people use GitHub to discover, fork, and contribute to over 48 million projects.</p>
-            </div>
-
-            <div id="map"></div>
-
+        <div class="cell cell2">
+          Public projects are always free. Work together across unlimited private repositories for $7 / month.
         </div>
-    </section>
+      </div>
 
-    <!--PRICING CARD-->
-    <section class="pricing">
-        <div class="inner">
+    </div>
+  </section>
 
-            <div class="card">
-                <div class="cell cell1">
-                    <a class="btn btn-primary sign-up" href="#">Sign up for GitHub</a>
-                </div>
-                <div class="cell cell2">
-                    Public projects are always free. Work together across unlimited private repositories for $7 / month.
-                </div>
-            </div>
+  <!--FOOTER-->
+  <footer class="section">
+    <div class="inner clearfix">
 
-        </div>
-    </section>
+      <ul class="site-links float--right">
+        <li><a href="#">Contact&nbsp;GitHub</a></li>
+        <li><a href="#">API</a></li>
+        <li><a href="#">Training</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
 
-    <!--FOOTER-->
-    <footer>
-        <div class="inner clearfix">
+      <ul class="site-links float--left">
+        <li>© 2016 GitHub, Inc.</li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Security</a></li>
+        <li><a href="#">Status</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
 
-            <ul class="site-links inner-right clearfix">
-                <li><a href="#">Contact&nbsp;GitHub</a></li>
-                <li><a href="#">API</a></li>
-                <li><a href="#">Training</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
+      <a class="logo" href="#">
+        <svg version="1.1"
+             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             width="24"
+             height="24"
+             viewBox="0 0 16 16"
+             fill="#ccc">
+          <path fill-rule="evenodd"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+        </svg>
+      </a>
 
-            <ul class="site-links inner-left clearfix">
-                <li>© 2016 GitHub, Inc.</li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Security</a></li>
-                <li><a href="#">Status</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-
-            <a class="logo" href="#">
-                <svg version="1.1"
-                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                     width="24"
-                     height="24"
-                     viewBox="0 0 16 16"
-                     fill="#ccc">
-                    <path fill-rule="evenodd"
-                          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
-                </svg>
-            </a>
-
-        </div>
-    </footer>
+    </div>
+  </footer>
 
 </div>
 <script>
   // Initialize Google Map.
   function initMap() {
 
-    var myLatLng = {
+    const myLatLng = {
       lat: 37.782293,
       lng: -122.391240
-    };
+    }
 
-    var map = new google.maps.Map(document.getElementById('map'), {
+    const map = new google.maps.Map(document.getElementById('map'), {
       center: myLatLng,
       scrollwheel: false,
       zoom: 18
-    });
+    })
 
-    var marker = new google.maps.Marker({
+    const marker = new google.maps.Marker({
       position: myLatLng,
       map: map,
       title: 'GitHub'
-    });
+    })
 
   }
 </script>
