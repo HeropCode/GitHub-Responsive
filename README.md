@@ -76,13 +76,13 @@ https://www.youtube.com/watch?v=afvT1c1ii0c
 <meta name="description" content="GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects.">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
-        
+
 <!-- http://ogp.me/ -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="GitHub">
 <meta property="og:title" content="Build software better, together">
 <meta property="og:description" content="GitHub clone coding / GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects.">
-<meta property="og:image" content="img/github-logo.png">
+<meta property="og:image" content="img/logo__github.png">
 <meta property="og:url" content="https://github.com">
 
 <!-- https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html -->
@@ -90,7 +90,7 @@ https://www.youtube.com/watch?v=afvT1c1ii0c
 <meta property="twitter:site" content="GitHub">
 <meta property="twitter:title" content="Build software better, together">
 <meta property="twitter:description" content="GitHub clone coding / GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects.">
-<meta property="twitter:image" content="img/github-logo.png">
+<meta property="twitter:image" content="img/logo__github.png">
 <meta property="twitter:url" content="https://github.com">
 ```
 
