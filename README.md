@@ -72,6 +72,11 @@ https://www.youtube.com/watch?v=afvT1c1ii0c
 ### `index.html`
 
 ```html
+<meta name="author" content="HEROPY">
+<meta name="description" content="GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects.">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+        
 <!-- http://ogp.me/ -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="GitHub">
