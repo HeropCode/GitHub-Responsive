@@ -60,7 +60,7 @@ a {
 }
 
 /* INPUT */
-.input {
+.input--text {
   height: 34px;
   padding: 0 10px;
   font-size: 16px;
@@ -70,14 +70,14 @@ a {
   box-sizing: border-box;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075); /* .75 아니고 .075 주의 */
 }
-.input:focus {
+.input--text:focus {
   border-color: #51a7e8 !important; /* header #search 선택자를 덮어쓰기 위해서 사용 */
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075), 0 0 5px rgba(81, 167, 232, .5);
 }
 /* Vendor prefix(브라우저 업체별 접두어) */
-.input::-webkit-input-placeholder { color: #cacaca; }
-.input:-ms-input-placeholder      { color: #cacaca; }
-.input::-moz-placeholder          { color: #cacaca; }
+.input--text::-webkit-input-placeholder { color: #cacaca; }
+.input--text:-ms-input-placeholder      { color: #cacaca; }
+.input--text::-moz-placeholder          { color: #cacaca; }
 
 /* SUMMARY */
 .summary__title {
@@ -239,7 +239,7 @@ header .sub-menu li a:hover {
   width: 340px;
   margin-top: 16px;
 }
-#sign-form .input {
+#sign-form .input--text {
   width: 100%;
   height: 40px;
 }
