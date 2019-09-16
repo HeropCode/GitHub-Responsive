@@ -5,11 +5,11 @@ header.section .inner {
   height: auto;
   padding: 0 20px;
 }
-header .inner__menu-group,
-header .inner__sign-group {
+header .menu-group,
+header .sign-group {
   float: none;
 }
-header .inner__menu-group {
+header .menu-group {
   display: block;
 }
 header .logo {
@@ -24,7 +24,7 @@ header .main-menu li {
 header .main-menu li a {
   padding: 16px 0;
 }
-header .inner__sign-group {
+header .sign-group {
   padding: 10px 0 20px;
 }
 header .btn-group {
@@ -105,7 +105,7 @@ header .toggle.on {
   border-right: none;
 }
 .section--feature .tiles li img {
-  padding: 0 30%;
+  padding: 14px 30% 24px;
 }
 
 

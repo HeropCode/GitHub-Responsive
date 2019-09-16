@@ -111,13 +111,12 @@ header {
   /* box-shadow: X Y BLUR SPREAD COLOR; */
   box-shadow: 0 0 5px rgba(0, 0, 0, .75);
   background: #fff;
-  margin-bottom: -1px;
 }
 header .inner {
   height: 78px;
 }
 /* Menu group(Left) */
-header .inner__menu-group {
+header .menu-group {
   display: flex;
   align-items: center;
   height: 100%;
@@ -148,7 +147,7 @@ header .main-menu li a:hover {
   color: #4078c0;
 }
 /* Sign group(Right) */
-header .inner__sign-group {
+header .sign-group {
   display: flex;
   align-items: center;
   height: 100%;
@@ -166,10 +165,9 @@ header .btn-group .sign-in {
 }
 #search {
   width: 160px;
-  padding: 0 8px;
   font-size: 14px;
 }
-#search + input[type="submit"] {
+#search + [type="submit"] {
   display: none;
 }
 header .sub-menu {
@@ -239,22 +237,15 @@ header .sub-menu li a:hover {
   width: 340px;
   margin-top: 16px;
 }
-#sign-form .input--text {
-  width: 100%;
-  height: 40px;
-}
 #sign-form li {
   margin-bottom: 17px;
 }
 #sign-form li:last-child {
   margin-bottom: 0;
 }
-#sign-form .sign-up {
+#sign-form .input--text {
   width: 100%;
-  height: 62px;
-  padding: 15px 25px;
-  font-size: 20px;
-  justify-content: center;
+  height: 40px;
 }
 #sign-form .caption {
   font-size: 12px;
@@ -263,28 +254,35 @@ header .sub-menu li a:hover {
   line-height: 1.5;
   text-align: center;
 }
+#sign-form [type="submit"] {
+  width: 100%;
+  height: 62px;
+  padding: 0 25px;
+  font-size: 20px;
+  justify-content: center;
+}
 
 
 /* FEATURE */
 .section--feature {
   background: #f5f5f5;
+  padding-top: 66px;
 }
 .section--feature .summary {
   max-width: 820px;
   margin: 0 auto;
-  padding-top: 66px;
   text-align: center;
 }
 .section--feature .video {
   max-width: 650px;
   margin: 50px auto;
 }
-.section--feature .video .video_ratio {
+.section--feature .video .video-ratio {
   height: 0;
   padding-top: 56.25%;
   position: relative;
 }
-.section--feature .video .video_ratio iframe {
+.section--feature .video .video-ratio iframe {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -328,11 +326,10 @@ header .sub-menu li a:hover {
 }
 .section--feature .tiles li img {
   max-width: 100%;
-  padding: 0 10%;
-  margin: 14px 0 24px 0;
+  padding: 14px 10% 24px;
   box-sizing: border-box;
 }
-.section--feature .tiles li h4 {
+.section--feature .tiles li h3 {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 10px;
@@ -344,9 +341,6 @@ header .sub-menu li a:hover {
 
 
 /* WHERE IS GITHUB */
-.section--where-is {
-  overflow: hidden;
-}
 .section--where-is .inner {
   padding-top: 80px;
 }
@@ -380,7 +374,7 @@ header .sub-menu li a:hover {
   align-items: center;
   padding: 24px;
 }
-.section--pricing .card .cell1 .sign-up {
+.section--pricing .card .cell1 .btn {
   height: 50px;
   font-size: 16px;
 }

@@ -25,12 +25,6 @@
     border-bottom: 1px solid #e5e5e5;
   }
 */
-.section--feature .tiles li:last-child {
-  border-bottom: none;
-}
-.section--feature .tiles li img {
-  padding: 0 30%;
-}
 
 
 /* WHERE IS GITHUB */
