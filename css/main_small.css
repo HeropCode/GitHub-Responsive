@@ -49,11 +49,8 @@
 
 
 /* FOOTER */
-footer .float--left,
-footer .float--right {
-  float: none;
-}
 footer .site-links {
+  float: none;
   display: block;
   text-align: center;
 }

@@ -5,22 +5,22 @@
   const $toggleBtn = document.getElementById('toggle-btn'); // Return Element
   
   $toggleBtn.addEventListener('click', function () {
-    onToggleElement();
+    toggleElements();
   });
 
   window.addEventListener('resize', function () {
-    if (window.innerWidth > 1020) {
-      offToggleElement();
+    if (window.innerWidth > 1024) {
+      offElements();
     }
   });
 
-  function onToggleElement() {
+  function toggleElements() {
     [].forEach.call($toggles, function (toggle) {
       toggle.classList.toggle('on');
     });
   }
 
-  function offToggleElement() {
+  function offElements() {
     [].forEach.call($toggles, function (toggle) {
       toggle.classList.remove('on');
     });
